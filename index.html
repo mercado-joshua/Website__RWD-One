@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="p-homepage">
+  <div id="js-overlay" class="c-overlay">
+    <h2>Type something here...</h2>
+  </div>
+
+  <div class="l-hero">
+    <div class="l-container">
+      <div class="c-banner">
+        <header class="c-banner__title">
+          <h1>yummy.eats</h1>
+        </header>
+
+        <div class="c-banner__content animate__animated animate__fadeInDown">
+          <h3>The healthy</h3>
+          <h2>Eating Experience</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, impedit placeat eligendi harum saepe earum sint voluptate minima qui optio.</p>
+        </div>
+
+        <div class="c-banner-form animate__animated animate__fadeInDown">
+          <form class="c-form" action="">
+            <p>enter your city</p>
+            <div class="c-form-content">
+              <div class="l-col">
+                <label for="">
+                  <input class="c-form__input" type="text">
+                </label>
+                <p>Example: "San Diego"</p>
+              </div>
+
+              <button type="button" id="js-btn" class="l-col c-btn">find food now</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="l-section">
+    <div class="l-section__image">
+      <img src="food.jpg" alt="a picture of food">
+    </div>
+
+    <div class="l-section__content">
+      <h2>authentic wholesome</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis dignissimos eos itaque accusamus, a perspiciatis excepturi repellat, fuga earum officia odit amet eligendi esse consectetur facilis ullam inventore accusantium quaerat magnam veniam consequatur, praesentium temporibus! Ipsum, tenetur? Amet, exercitationem non. Repudiandae at aperiam ex quo. Ea dolores veniam iure officia.</p>
+
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem rerum, porro doloremque maiores quasi velit recusandae repudiandae beatae quia iste laudantium repellendus illum ipsam tempora, voluptate ex exercitationem eveniet molestias vero atque corporis veniam! Molestiae impedit tempora nihil, natus consequatur recusandae quidem quam cupiditate corporis veniam repellat esse laboriosam id?</p>
+    </div>
+  </section>
+
+  <script>
+    'use strict';
+
+    const BTN = document.getElementById('js-btn');
+    const OVERLAY = document.getElementById('js-overlay');
+
+    BTN.addEventListener('click', () => {
+      OVERLAY.style.display = 'grid';
+      OVERLAY.classList.add('animate__animated', 'animate__fadeIn');
+    });
+
+
+  </script>
+</body>
+</html>
